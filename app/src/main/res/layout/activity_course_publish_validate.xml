@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qysports.funfootball.activity.CoursePublishValidateActivity">
+
+    <include layout="@layout/include_titlebar" />
+
+    <TextView
+        style="@style/TextViewSubhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:text="由于您目前还不是教练，不能发布课程" />
+
+    <Button
+        android:id="@+id/btn_coach_apply"
+        style="@style/ButtonPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:text="注册教练" />
+
+</LinearLayout>

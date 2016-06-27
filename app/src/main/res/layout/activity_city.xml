@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qysports.funfootball.activity.CityActivity">
+
+    <include layout="@layout/include_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.boredream.bdcodehelper.view.PinnedSectionListView
+            android:id="@+id/lv_city"
+            style="@style/AbsListViewCommon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.boredream.bdcodehelper.view.PositionBar
+            android:id="@+id/pb"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_small"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/margin_small">
+        </com.boredream.bdcodehelper.view.PositionBar>
+    </RelativeLayout>
+
+</LinearLayout>

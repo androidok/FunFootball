@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_gray" />
+
+    <RadioGroup
+        android:id="@+id/rg_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <com.boredream.bdcodehelper.view.DrawableRadioButton
+            android:id="@+id/rb_course"
+            style="@style/RadioButtonBottomTab"
+            android:drawableBottom="@drawable/ic_tab1_sel"
+            app:drawableHeight="38dp"
+            app:drawableWidth="24dp" />
+
+        <com.boredream.bdcodehelper.view.DrawableRadioButton
+            android:id="@+id/rb_match"
+            style="@style/RadioButtonBottomTab"
+            android:drawableBottom="@drawable/ic_tab2_sel"
+            app:drawableHeight="38dp"
+            app:drawableWidth="24dp" />
+
+        <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="72dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_tab3_sel" />
+
+        <com.boredream.bdcodehelper.view.DrawableRadioButton
+            android:id="@+id/rb_activity"
+            style="@style/RadioButtonBottomTab"
+            android:drawableBottom="@drawable/ic_tab4_sel"
+            app:drawableHeight="38dp"
+            app:drawableWidth="24dp" />
+
+        <com.boredream.bdcodehelper.view.DrawableRadioButton
+            android:id="@+id/rb_user"
+            style="@style/RadioButtonBottomTab"
+            android:drawableBottom="@drawable/ic_tab5_sel"
+            app:drawableHeight="38dp"
+            app:drawableWidth="24dp" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

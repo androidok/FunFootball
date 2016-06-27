@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_medium">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_large">
+
+            <TextView
+                style="@style/TextViewSubhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_tiny"
+                android:text="家长姓名"
+                android:textColor="@color/txt_gray" />
+
+            <EditText
+                android:id="@+id/et_parent_name"
+                style="@style/EditTextSingleLine"
+                android:layout_height="48dp"
+                android:hint="请输入家长姓名"
+                android:paddingLeft="80dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_large">
+
+            <TextView
+                style="@style/TextViewSubhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_tiny"
+                android:text="学员姓名"
+                android:textColor="@color/txt_gray" />
+
+            <EditText
+                android:id="@+id/et_student_name"
+                style="@style/EditTextSingleLine"
+                android:layout_height="match_parent"
+                android:hint="请输入学员姓名"
+                android:paddingLeft="80dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_large">
+
+            <TextView
+                style="@style/TextViewSubhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_tiny"
+                android:text="学员年龄"
+                android:textColor="@color/txt_gray" />
+
+            <EditText
+                android:id="@+id/et_age"
+                style="@style/EditTextSingleLine"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:hint="请输入学员年龄"
+                android:paddingLeft="80dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_large">
+
+            <TextView
+                style="@style/TextViewSubhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_tiny"
+                android:text="手机号"
+                android:textColor="@color/txt_gray" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/EditTextSingleLine"
+                android:layout_height="match_parent"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:maxEms="11"
+                android:paddingLeft="80dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_cost"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_large">
+
+            <TextView
+                style="@style/TextViewSubhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_tiny"
+                android:text="课程费用"
+                android:textColor="@color/txt_gray" />
+
+            <TextView
+                android:id="@+id/tv_cost"
+                style="@style/TextViewSubhead"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="80dp"
+                android:textColor="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/ButtonPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="确认报名" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_upload_3image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="20dp"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingRight="@dimen/margin_medium"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="@dimen/upload_image_size"
+        android:layout_height="@dimen/upload_image_size">
+
+        <ImageView
+            android:id="@+id/iv_image1"
+            android:layout_width="@dimen/upload_image_size"
+            android:layout_height="@dimen/upload_image_size"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_image1_remove"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:src="@mipmap/ic_coach_cameraoff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/upload_image_size"
+        android:layout_height="@dimen/upload_image_size"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_image2"
+            android:layout_width="@dimen/upload_image_size"
+            android:layout_height="@dimen/upload_image_size"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_image2_remove"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:src="@mipmap/ic_coach_cameraoff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/upload_image_size"
+        android:layout_height="@dimen/upload_image_size">
+
+        <ImageView
+            android:id="@+id/iv_image3"
+            android:layout_width="@dimen/upload_image_size"
+            android:layout_height="@dimen/upload_image_size"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_image3_remove"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:src="@mipmap/ic_coach_cameraoff" />
+
+    </RelativeLayout>
+
+</LinearLayout>

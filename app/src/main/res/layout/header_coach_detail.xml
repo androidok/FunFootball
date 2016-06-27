@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp">
+
+
+        <ImageView
+            android:id="@+id/iv_bg_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:background="@color/bg_gray"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium">
+
+            <TextView
+                style="@style/TextViewStrokeCirrect"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="教练姓名" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextViewBody"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:background="@color/divider_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium">
+
+            <TextView
+                style="@style/TextViewStrokeCirrect"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="教练年龄" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                style="@style/TextViewBody"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium">
+
+            <TextView
+                style="@style/TextViewStrokeCirrect"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="执教年龄" />
+
+            <TextView
+                android:id="@+id/tv_training_years"
+                style="@style/TextViewBody"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:background="@color/divider_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium">
+
+            <TextView
+                style="@style/TextViewStrokeCirrect"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="执照等级" />
+
+            <TextView
+                android:id="@+id/tv_cert_level"
+                style="@style/TextViewBody"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_group_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium">
+
+        <TextView
+            style="@style/TextViewStrokeCirrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="个人经历" />
+
+        <TextView
+            android:id="@+id/tv_career"
+            style="@style/TextViewBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_group_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium">
+
+        <TextView
+            style="@style/TextViewStrokeCirrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="教练评价" />
+
+        <RadioGroup
+            android:id="@+id/rg_coach_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_coach_comment_all"
+                style="@style/RadioButtonPrimaryStroke2Solid"
+                android:text="全部" />
+
+            <RadioButton
+                android:id="@+id/rb_coach_comment1"
+                style="@style/RadioButtonPrimaryStroke2Solid"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="好评" />
+
+            <RadioButton
+                android:id="@+id/rb_coach_comment2"
+                style="@style/RadioButtonPrimaryStroke2Solid"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="一般" />
+
+            <RadioButton
+                android:id="@+id/rb_coach_comment3"
+                style="@style/RadioButtonPrimaryStroke2Solid"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="需改善" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

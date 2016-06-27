@@ -1,0 +1,66 @@
+<resources>
+
+    <style name="CheckBox">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/cb_sel</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RadioButtonPrimaryStroke2Solid">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">@drawable/correct_primary_stroke2solid_sel</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/txt_primary2white_sel</item>
+        <item name="android:textSize">@dimen/txtsize_caption</item>
+    </style>
+
+    <style name="RadioButtonTopTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_primarydark_indicator_sel</item>
+        <item name="android:textColor">@color/txt_gray2primarydark_sel</item>
+        <item name="android:textSize">@dimen/txtsize_subhead</item>
+    </style>
+
+    <style name="TextViewWeek" parent="TextViewCaption">
+        <item name="android:layout_width">34dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/oval_primary_light_solid</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+    </style>
+
+    <style name="TextViewStrokeCirrect" parent="TextViewBody">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:paddingLeft">@dimen/margin_small</item>
+        <item name="android:paddingRight">@dimen/margin_small</item>
+        <item name="android:background">@drawable/cirrect_primary_stroke</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextViewStrokeCorrect" parent="TextViewBody">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/correct_primary_stroke</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DialogAdd" parent="Theme.AppCompat.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>
